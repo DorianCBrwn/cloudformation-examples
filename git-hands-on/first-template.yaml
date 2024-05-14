@@ -1,0 +1,12 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Description: A simple ec2 template.
+
+Resources:
+  WebServerInstance:
+    Type: AWS::EC2::Instance
+    Properties:
+      ImageId: ami-04b70fa74e45c3917
+      InstanceType: t2.micro
+      KeyName: general-ec2
+      SecurityGroups:
+        - default
